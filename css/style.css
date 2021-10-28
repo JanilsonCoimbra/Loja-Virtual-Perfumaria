@@ -193,7 +193,7 @@ ins {
         flex-direction: row;
         margin-left: 0px;
         font-weight: 900;
-        font-size: 20px;
+        font-size: 15px;
     }
     video {
         display: none;
@@ -212,7 +212,7 @@ ins {
     
     }
     h2 {
-        font-size: 20px;
+        font-size: 10px;
     }
     #rodape {
         flex-direction: column;
