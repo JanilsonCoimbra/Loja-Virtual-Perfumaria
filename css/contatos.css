@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a:visited{
+    color: aliceblue;
+}
+a{
+    text-decoration: none;
+}
+
+body > header {
+    width: 99%;
+    background-color: black;
+    padding: 5px;
+    box-shadow: 0px 0px 7px;   
+}
+body > header > nav > ul {
+display: flex;
+justify-content: flex-end;
+margin-right: 20px;
+flex-wrap: wrap;
+}
+header > h1 {
+    color: aliceblue;
+    float: left;
+    margin-left: 50px;
+}
+ body > header > nav li {
+    width: 100px;
+    background-color: rgb(31, 29, 29);
+    padding: 10px;
+    transition: all 0.1s ease-in-out;
+    margin-left: 5px;    
+}
+body > header > nav > li a{
+    color: rgb(0, 100, 187);
+    font-weight: bolder;
+    font-size: 15px;
+    text-decoration: none;
+    list-style: none;
+
+}
+ body > header > nav li:hover {
+    background-color: black;
+}
+.submenu > ul{
+    display: none;
+    position: absolute;
+    list-style: none;
+    padding: 15px;
+    color: white;
+    margin-left: -30px;
+}
+
+.submenu:hover > ul {
+    display: block;
+ 
+}
+main{
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+
+}
+main > h1 {
+    text-align: center;
+    background-color: rgb(138, 138, 138);
+    margin-bottom: 30px;
+
+    margin-left: -10px;
+    }
+#content {
+    display: flex;
+    justify-content: flex-end;
+}
+main table{
+    margin: auto;
+    padding-top: 20px;
+    margin-bottom: 50px;
+}
+main table th {
+    background-color: rgb(141, 130, 116);
+    padding: 5px;
+    border-top-left-radius: 10px;
+}
+main table td {
+    background-color: rgb(212, 205, 195);
+    padding: 5px;
+    border-top-right-radius:10px ;
+}
+
+main section{
+    width: 50%;
+    margin: auto;
+    margin-bottom: 50px;
+
+}
+main #form input {
+    width: 80%;
+    height: 40px;
+    display: block;
+    border-radius: 10px;
+    border: 0;
+    background-color: rgb(234, 255, 255);
+    margin: auto;
+}
+#table h2 {
+    text-align: center;
+    margin-bottom: 5px;
+}
+#table p {
+    width: 80%;
+    text-align: justify;
+    margin: auto;
+
+}
+main #form textarea {
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+main #form label {
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+
+#rodape {
+    background: black;
+    height: 100%;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-around;
+
+
+}
+
+#mapa {
+    width: 87%;
+    background-color: rgb(13, 8, 29);
+    padding: 30px;
+}
+#new {
+    padding: 30px;
+}
+
+@media screen and (max-width: 900px){
+    #content {
+        flex-direction: column;
+    }
+    main section{
+        width: 80%;
+        align-items: center;
+    }
+    #rodape {
+       flex-wrap: wrap;  
+       flex-direction: column;
+    
+    }
+
+}
