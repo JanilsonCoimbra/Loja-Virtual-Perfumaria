@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     list-style: none;
+
 }
 a:visited{
     color: aliceblue;
@@ -59,7 +60,7 @@ body > header > nav > li a{
  
 }
 main{
-    width: 100%;
+    width: 98%;
     margin-top: 20px;
     padding: 10px;
     display: flex;

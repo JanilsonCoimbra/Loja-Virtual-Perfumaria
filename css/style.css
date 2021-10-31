@@ -71,7 +71,7 @@ main{
 }
 
 main > img {
-    width: 100%;
+    width: calc(100% - 1px);
 }
 video {
     display: block;
@@ -79,19 +79,17 @@ video {
 }
 #absolut {
     position: absolute;
-    width: 100%;
+    width: 50%;
     height: 104%;
     font-size: 50px;
-    padding: 70px;
     display: flex;
-    background-color: rgba(240, 248, 255, 0.336);
 }
 #absolut > div {
     width: 250px;
     height: 300px;
-    margin: 10px;
+    margin: auto;
     box-shadow: 3px 3px 10px;
-    
+    float:left;
 }
 #absolut img {
     width: 100%;
@@ -103,7 +101,6 @@ section img {
 
 #galeria img {
     width: 100%;
-    min-width: 600px;
     position: sticky;
 }
 main h2{
@@ -133,7 +130,11 @@ main h2{
 
 @media screen and (max-width: 900px){
     
+    body > header {
+        width: 98%;
+    }
     #absolut {
+        width: calc(100% - 1px);
         position: relative;
         padding-top: 0px;
         display: flex;
@@ -146,7 +147,8 @@ main h2{
         height: 300px;
         margin-bottom: 10px;
         box-shadow: 3px 3px 10px white;
-       
+        margin-bottom: 15px;
+        margin-top: 15px;
         
     }
 
