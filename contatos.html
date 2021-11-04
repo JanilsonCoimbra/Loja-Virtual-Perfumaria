@@ -11,6 +11,7 @@
     <meta name="description" content="Aproveite agora mesmo os melhores preços em perfumaria" />
     <meta property="og:image" content="https://janilsoncoimbra.github.io/page/img/perfumes.png" />
     <!-- <div>Ícones feitos por <a href="https://www.flaticon.com/br/autores/made-by-made-premium" title="Made by Made Premium">Made by Made Premium</a> from <a href="https://www.flaticon.com/br/" title="Flaticon">www.flaticon.com</a></div>-->
+    <script src="javascript/config.js"></script>
 </head>
 
 <body>
@@ -54,15 +55,16 @@
             </section>
             <section id="form">
                 <form>
+                    
                     <label for="nome">Nome</label>
-                    <input type="text" placeholder="Seu nome aqui">
+                    <input type="text" placeholder="Seu nome aqui" required>
                     <label for="email">Email</label>
-                    <input type="email" placeholder="email@dominio.com">
+                    <input onclick="formss(0, 'Nome')" type="email" required placeholder="email@dominio.com">
                     <label for="tel">Telefone</label>
-                    <input type="tel" required placeholder="(00) 00000-0000"></input>
+                    <input onclick="formss(1, 'Email')" type="tel" required placeholder="(00) 00000-0000"></input>
                     <label for="text">Mensagem</label>
                     <textarea placeholder="Sua mensagem aqui!" required name="text" id="text" cols="30" rows="10"></textarea>
-                    <input type="submit">
+                    <input onclick="conferencia()" type="submit">
                 </form>
             </section>
         </div>
@@ -83,7 +85,7 @@
             <h3>Assine nossa newsleter!</h3>
             <hr>
             <br>
-            <form action="#">
+            <form action="">
                 <label for="email"></label>
                 <input type="email">
                 <input type="submit" value="Enviar">
@@ -95,6 +97,7 @@
         </div>
 
     </footer>
+  
 </body>
 
 </html>
