@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/lampada.css">
+</head>
+
+<body>
+    <div onmouseout="piscarsair()" onmouseenter="piscar()" onclick="quebrar()" class="lampada"></div>
+    <h1>Movimente o mause varias vezes para gerar energia!</h1>
+    <script>
+        let lamp = document.querySelector('.lampada');
+        let estado = ['img/ligada.png', 'img/desligada.png', 'img/destruida.png']
+        let cor = document.querySelector('body')
+        let cont = 0 
+        let status = true
+        function piscar() {
+                if(status == true) {
+                lamp.style = 'background-image: url(' + estado[0] + ')'
+                cont++
+                console.log(cont)
+                cor.style = 'background: rgb(0, '+cont+', 0)'
+            }
+        }
+        function piscarsair() {
+            if(status == true) {
+                lamp.style = 'background-image: url(' + estado[1] + ')'
+                cont++
+                console.log(cont)
+            }
+        }
+        function quebrar() {
+            lamp.style = 'background-image: url(' + estado[2] + ')'
+            status = false
+            alert("MUITAAA ENERGIA GERADA! RECARREGUE A PAGINA")
+        }
+        
+    </script>
+</body>
+
+</html>
